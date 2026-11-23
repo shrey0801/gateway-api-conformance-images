@@ -6,6 +6,7 @@ tool sigs.k8s.io/promo-tools/v4/cmd/kpromo
 
 require (
 	github.com/stretchr/testify v1.12.1
+	go.opentelemetry.io/proto/otlp v1.11.0
 	golang.org/x/net v0.62.0
 	google.golang.org/grpc v1.85.0
 	google.golang.org/protobuf v1.36.12
@@ -164,7 +165,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.16 // indirect
 	github.com/googleapis/gax-go/v2 v2.22.0 // indirect
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.4 // indirect
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.8 // indirect
 	github.com/in-toto/attestation v1.2.0 // indirect

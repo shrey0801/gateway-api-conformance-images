@@ -84,3 +84,13 @@ docker buildx build \
   ${DOCKER_PUSH_FLAG} \
   -f docker/Dockerfile.echo-advanced \
   .
+
+echo "Building and pushing otel-sink image ...${BUILDX_PLATFORMS}"
+
+docker buildx build \
+  -t "${REGISTRY}/conformance/otel-sink:${GIT_TAG}" \
+  -t "${REGISTRY}/conformance/otel-sink:${VERSION_TAG}" \
+  --platform "${BUILDX_PLATFORMS}" \
+  ${DOCKER_PUSH_FLAG} \
+  -f docker/Dockerfile.otel-sink \
+  .
